@@ -1,9 +1,14 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 
+include_directories(
+	src
+	header
+)
+
 ADD_SUBDIRECTORY(googletest)
 
 ADD_EXECUTABLE(test
-	main.cpp
+	src/main.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)
