@@ -3,7 +3,12 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 include_directories(
 	src
 	header
+	googletest
 )
+
+ADD_SUBDIRECTORY(googletest)
+
+SET(CMAKE_CXXX_STANDARD 11)
 
 ADD_EXECUTABLE(test
 	src/main.cpp
