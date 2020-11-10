@@ -32,3 +32,23 @@ TEST(Area, NegativeNumbers) {
 	Rectangle* test = new Rectangle(-2,1);
 	EXPECT_EQ(test->area(), -2);
 }
+TEST(Area, TwoNegativeNumbers) {
+        Rectangle* test = new Rectangle(-2,-1);
+        EXPECT_EQ(test->area(), 2);
+}
+TEST(Perimeter, PosNums) {
+        Rectangle* test = new Rectangle(5,7);
+        EXPECT_EQ(test->perimeter(), 24);
+}
+TEST(Perimeter, MixedNums) {
+        Rectangle* test = new Rectangle(-3,2);
+        EXPECT_EQ(test->perimeter(), -2);
+}
+TEST(Perimeter, NegNums) {
+        Rectangle* test = new Rectangle(-3,-4);
+        EXPECT_EQ(test->perimeter(), -14);
+}
+
+
+
+
