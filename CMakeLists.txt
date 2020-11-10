@@ -5,8 +5,6 @@ include_directories(
 	header
 )
 
-ADD_SUBDIRECTORY(googletest)
-
 ADD_EXECUTABLE(test
 	src/main.cpp
 )
